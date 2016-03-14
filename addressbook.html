@@ -15,29 +15,29 @@
     <div class="page-header">
       <h1>My Address Book</h1>
     </div>
-      <p>Name <input type="text" data-bind="value: AddressBook.contact.name" />
-      Phone Number
-        <input type="text" data-bind="value: AddressBook.
+    <p>Name
+      <input type="text" data-bind="value: AddressBook.contact.name" /> Phone Number
+      <input type="text" data-bind="value: AddressBook.
        contact.phoneNumber" />
-     
-        <button class="btn btn-primary" data-bind="click:
+
+      <button class="btn btn-primary" data-bind="click:
        AddressBook.addContact">Add</button>
-      </p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Phone Number</th>
-          </tr>
-        </thead>
-        <tbody data-bind="foreach: AddressBook.contacts">
-          <tr>
-            <td data-bind="text: name"></td>
-            <td data-bind="text: phoneNumber"></td>
-          </tr>
-        </tbody>
-      </table>
-    
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody data-bind="foreach: AddressBook.contacts">
+        <tr>
+          <td data-bind="text: name"></td>
+          <td data-bind="text: phoneNumber"></td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </body>
 
