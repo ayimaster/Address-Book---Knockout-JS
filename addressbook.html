@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" />
+  <title>Address Book</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
+  <script type="text/javascript" src="javascript/addressbook.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>My Address Book</h1>
+    </div>
+      <p>Name <input type="text" data-bind="value: AddressBook.contact.name" />
+      Phone Number
+        <input type="text" data-bind="value: AddressBook.
+       contact.phoneNumber" />
+     
+        <button class="btn btn-primary" data-bind="click:
+       AddressBook.addContact">Add</button>
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody data-bind="foreach: AddressBook.contacts">
+          <tr>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: phoneNumber"></td>
+          </tr>
+        </tbody>
+      </table>
+    
+  </div>
+</body>
+
+</html>

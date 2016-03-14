@@ -1,0 +1,23 @@
+{
+  "name": "AddressBook",
+  "homepage": "https://github.com/ayimaster/Restorant-Con-Fusion",
+  "authors": [
+    "Ayima Okeeva <ayimaster@gmail.com>"
+  ],
+  "description": "knockout exercise",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.1",
+    "knockout": "~3.4.0",
+    "bootstrap": "~3.3.6"
+  }
+}
